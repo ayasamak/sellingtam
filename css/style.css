@@ -1,0 +1,222 @@
+*{box-sizing: border-box;margin: 0;padding: 0}
+.navbar{height: 60px;z-index: 99999;background: white;border-bottom: 1px solid white;box-shadow: 2px 2px 2px white, -2px -2px 2px white;position: fixed;left: 0;right: 0;}
+.navbar h3{font-size: 35px;font-weight: bold;}
+.navbar h3 span{color:#F16821}
+.navbar-nav li:first-of-type{margin-left:250px}
+.navbar-nav .nav-item{margin-right: 20px;}
+.navbar-nav .active .nav-link{color:#F16821;}
+.navbar-nav .nav-link{color:black;transition: .5s}
+.navbar-nav .nav-item:hover .nav-link{color:#F16821}
+@media only screen and (max-width: 600px){
+  body{overflow-x: hidden;}
+.navbar{height:100px;}
+.navbar-nav{ height:350px;overflow: scroll;position: absolute;top: 100%;left:100%;;color: black;background: white;padding: 10px;font-size: 25px;transition: 1s;width: 50%}
+.navbar-nav li{font-size: 20px;}
+.navbar-toggler:focus{outline:none;border: none}
+.left{left:50%;}
+.navbar-nav li:first-of-type{margin-left:0px;}
+}
+/*header part*/
+.header{color: white;position: relative;z-index: 1;background-image: url(../images/hero_2.jpg);background-repeat: no-repeat;
+  background-attachment:fixed;background-size: cover;height:700px;}
+.overlay{position: absolute;top: 0;left: 0;z-index: 2;background:rgba(0,0,0,.4);width: 100%;height: 100%;padding:10px}
+.header h1{font-size: 85px;margin-top: 230px;margin-left: 10%;font-weight: bold;}
+.header p{margin-left: 10%; font-size: 20px;}
+.header button:first-of-type{margin-left: 10%;width: 170px;height: 50px;background: none;outline: none;border: 1px solid white;
+    color: white;font-weight: bold;transition: 1s}
+.header button:last-of-type{width: 250px;height: 50px;background: none;outline: none;border: 1px solid white;
+    color:black;font-weight: bold;background: white;transition: 1s}
+.header button:first-of-type:hover{color:black;background: white}
+.header button:last-of-type:hover{color:white;background:none}
+@media only screen and (max-width: 600px) {
+.header h1{font-size:40px;margin-top:40%;}
+.header button:first-of-type,.header button:last-of-type{width: 100%;margin: 0;margin-top: 4%;cursor: pointer;}
+}
+/*product part*/
+
+.products {padding: 10px;text-align: center;position: relative;top: 90px;}
+.products .container span{letter-spacing: 1px;color: #80808096;font-weight: 500;}
+.products .container h2{font-size: 45px;font-weight: bold;margin-bottom: 20px;}
+.products .container p{color: #808080db;}
+.product1{color:gray;margin-top:30px;overflow: hidden;position: relative;}
+.product1 .imge{overflow: hidden;width: 100%;height:300px}
+.product1 .imge img{max-width: 100%;transition:.5s;height: 100%}
+.product1 .imge p{position: absolute;border: 4px solid #F16821;width: 80%;height: 50%;top: 20px;left: 40px;display:none;z-index: 99;}
+.product1:hover p{display: block;}
+.product1:hover img{transform: scale(1.3);}
+.product1 .info h5{margin-top: 20px;font-weight: normal;color: black}
+.product1 i:first-of-type{color: #f89d13;}
+.product1 i:last-of-type{margin-left: 40px;color: #8080803d;}
+.product1 .info p{font-size: 15px;}
+.product1 .info button:first-of-type{border: 1px solid;width: 80px;outline: none;color: white;height: 40px;font-size: 15px;
+    background: black;font-weight: bold;margin-left: -40px;margin-right: 10px;transition: 1s;}
+.product1 .info button:last-of-type{border: 1px solid;width: 80px;outline: none;color:black;height: 40px;font-size: 15px;
+        background:white;font-weight: bold;transition: 1s}
+.red{color: red!important;}
+.product1 .info button:first-of-type:hover{color:black;background: white}
+.product1 .info button:last-of-type:hover{color:white;background:black}
+/*updates part*/
+.updates{background-image:url(../images/hero_2.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;clear: both;position: relative;
+    top: 200px;height: 300px;color: white;text-align: center;padding-top: 10px}
+.updates p{margin-top: 10px;}
+.updates h2{margin-top: 100px;font-weight: normal;margin-bottom: 30px;}
+.updates input{width: 40%;height: 15%;background: none;text-indent: 2px;outline: none;border: 2px solid white;color: white;}
+.updates input::placeholder{text-indent:10px}
+.updates button{height: 15%;margin-left: -6px;width: 8%;position: relative;  top: -1px;
+    background: none;border: 2px solid white;color: white;font-weight: bold;transition: 1s}
+.updates button:hover{color:black;background:white}
+@media only screen and (max-width: 600px) {
+.updates input{width: 70%;}
+.updates button{width: 30%;}
+.updates h2{margin-top: 10px;}
+}
+
+/*Product part*/
+.Product{position: relative;top:200px;background:#8080801f;text-align: center;padding-top: 100px;padding-bottom: 50px;}
+.Product .container span{letter-spacing: 1px;color: #80808096;font-weight: 500;}
+.Product .container h2{font-size: 45px;font-weight: bold;margin-bottom: 20px;}
+.Product .container p{color: #808080db;}
+.pro{background: white;padding: 50px;margin-top:30px}
+.Product .part1 img{max-width: 100%}
+.Product .col-lg-6{float: left;}
+.pro .part2 span:first-of-type,.pro .part1 span:first-of-type{left:15px;position: absolute;color: #8080801f;font-size:150px;top: -50px;font-weight: bold;}
+.pro .part2 h3{margin-top: 50px;}
+.pro .part2 p{color: gray;margin-top: 20px;}
+.pro .part2 h6{font-weight: bold;font-size: 20px}
+.pro .part2 del{color:#8080806b;margin-right: 10px}
+.pro .part2 span:last-of-type{color:gray;display: block;margin-bottom: 10px}
+.pro .part2 button{width:30%;height: 40px;outline: none;font-weight: bold;border: 3px solid black;transition: 1s}
+.pro .part2 button:first-of-type{color: black;background: white;}
+.pro .part2 button:last-of-type{color: white;background:black;}
+.pro .part2 button:first-of-type:hover{color: white;background:black;}
+.pro .part2 button:last-of-type:hover{color: black;background: white;}
+@media only screen and (max-width: 600px) {
+.Product .part1 img{margin-top:4%}
+.pro .part2 button:first-of-type{width: 45%;margin-right: 5%;height: 50px;margin-bottom: 15px}
+.pro .part2 button:last-of-type{width: 45%;height: 50px;margin-bottom: 15px}
+}
+/*About part*/
+.About{position: relative;clear: both;top:300px;}
+.about1 img{max-width: 100%;}
+.about1>div{color: white;background: #46DDB0;padding: 10px;width:55%;margin-top: -110px;position: absolute;margin-left: 330px;}
+.about1>div h1{font-weight: bold;text-align: center;}
+.about1>div p{ margin-left: 55px;}
+.about2{margin-top: 120px;margin-left: 5%}
+.about2  span{letter-spacing: 1px;color: #80808096;font-weight: 500;}
+.about2  h2{font-size: 45px;font-weight: bold;margin-bottom: 20px;}
+.about2  p{color: #808080db;}
+.about2 button{margin-top: 15px;width:45%;height:35px;outline: none;font-weight: bold;border: 3px solid black;transition: 1s;color: white;background:black;}
+.about2 button:hover{color: black;background: white;}
+@media only screen and (max-width: 600px) {
+.about1>div{width: 100%;  margin: 0;  position: relative;}
+}
+/*team part*/
+.team{clear: both;position: relative;top:400px;padding: 10px;text-align: center;}
+.team .container span{color: #808080a6;letter-spacing: 1px;}
+.team .container h2{font-weight: bold;font-size: 40px;}
+.team1{padding: 10px;background: white;border: 1px solid white}
+.team1 img{max-width: 100%;margin-top:30px;}
+.team1 h5{font-weight: normal;margin-top: 15px;color: gray;}
+.team1 span{font-size: 13px;color: #80808061!important;}
+.team1 p{color: #808080c9;}
+.team1 i{color: white;  width: 40px;  height: 40px;background:#F16821;border-radius: 50%;line-height: 40px;margin-right: 2%;transition: 1s}
+.team1 i:hover{color:white;background:black}
+/*sale part*/
+.sale{position: relative;top:500px;background-image:url(../images/hero_2.jpg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;
+color: white;padding: 10px;text-align: center;height:500px;}
+.sale .overlay{padding-top:70px;}
+.sale p{font-size: 22px;}
+.sale h2{font-weight: bold;font-size: 45px}
+.sale .sale1{margin-top: 20px;background: white;width:8%;float: left;height: 25%;border-radius: 10px;margin-right:20px;}
+.sale1 p{font-size: 40px;color: #62E2BC;}
+.sale1  span{margin-top: -10px;display: block;font-size: 20px;}
+.sale1:first-of-type{margin-left: 27%;}
+.sale span:first-of-type{color: #A1A6AD;font-weight: 600;}
+.sale button{display: block;margin: auto;background: none;width: 14%;height: 12%;color: white;  border: 2px solid white;
+margin-top: 50px;font-weight:bold ;transition: 1s;position: relative;top: 130px;left: -37%;}
+.sale button:hover{color: black;background: white}
+@media only screen and (max-width: 600px) {
+.sale{height: 650px;}
+.sale h2{font-size:20px}
+.sale button{position: absolute;top:65%;width: 90%;left: 5%;height: 10%;}
+.sale .sale1{width:17%;height: 20%;margin-right: 10px}
+.sale1:first-of-type{margin-left:0%;}
+}
+/*services part*/
+.services{position: relative;top:500px;background:#80808014;padding-top:50px;padding-bottom: 50px;}
+.services span{text-align: center;margin: auto;display: block;color:#AEB6BE;margin-bottom:10px;}
+.services h2{text-align: center;font-size: 40px;font-weight: bold;margin-bottom: 40px;}
+.service{margin-bottom: 30px;}
+.service i{float: left;font-size: 40px;padding-right: 30px;color:#F16821;}
+.service h3{font-size: 25px;color:#AEB6BE;font-weight: normal;}
+.service p{margin-left:80px;color:#AEB6BE;}
+.service a{margin-left: 70px;text-decoration: none;color:#F16821;transition:.5s}
+.service a:hover{color:#c34909}
+/*slider part*/
+.slider{top: 600px;position: relative;}
+.carousel-item img{width: 20%!important;border-radius: 50%;margin: auto;}
+.carousel-caption{position: relative;color: black;margin-left: 70px;margin-top: 30px;}
+.carousel-caption p{color: gray;font-size: 25px;width: 65%;}
+.carousel-caption span{margin-left: -400px;}
+.slide .carousel-indicators{position: absolute;top: 500px;}
+.slide .carousel-indicators li{background: #808080d9;width: 12px;height:0px;border-radius: 50%;display: inline-block;margin-right: 5px}
+.slide .carousel-indicators .active{background:#F16821!important;}
+@media only screen and (max-width: 600px) {
+.carousel-item img{width: 30%!important;border-radius: 50%;margin-left:37%;}
+.carousel-caption p{font-size:15px;width: 100%;margin-left: -30%;}
+.carousel-caption span{margin-left:-60%}
+.slide .carousel-indicators{top: 360px;margin-right:17%}
+.slide .carousel-indicators li:first-of-type{margin-left: 5%}
+}
+/*Posts part*/
+.Posts {top:700px;position: relative;}
+ .h2{text-align: center;font-weight: bold;font-size: 45px;margin-bottom: 100px;}
+ .span1{color:gray;text-align: center;display: block;}
+.post img{max-width: 100%;}
+.post p:first-of-type{font-size: 20px;margin-top: 30px;}
+.post span:first-of-type{color: #80808096;}
+.post span:first-of-type>span{color:#F16821}
+.post p:last-of-type{color: gray;margin-top: 20px;}
+.post span:last-of-type{color:#F16821}
+/*contact part*/
+.contact{position: relative;top:800px;clear: both;background: #80808017;padding-top: 70px;padding-bottom: 100px;}
+.contact h2{text-align: center;font-weight: bold;font-size: 45px;margin-bottom: 100px;}
+.contact span{color:gray;text-align: center;display: block;}
+.contact .form{background: white;width: 60%;margin: auto;padding: 30px;}
+.contact .form h3{font-weight: normal;margin-bottom: 30px;}
+.contact .form label,.contact .form input{width:100%;}
+.contact .form input{height:45px;border: 1px solid #80808045;outline: none;margin-bottom: 5%;text-indent: 10px}
+.contact .form label:first-of-type ,.contact .form label:nth-of-type(2){width:49%;}
+.contact .form input:first-of-type ,.contact .form input:nth-of-type(2){width: 45%;height: 40px;margin-bottom: 5%;border: 1px solid #80808045;outline: none;}
+.contact .form input:first-of-type{margin-right: 5%;}
+.contact .form textarea{width: 100%;padding: 5px;text-indent: 10px;height: 150px;outline: none;border: 1px solid #80808045;}
+.contact .form button{display: block;background:black;width: 30%;height: 52px;color: white;border:none;
+margin-top:10px;font-weight:bold ;transition: 1s;}
+.contact .form button:hover{color: black;background: white;border: 1px solid black}
+@media only screen and (max-width: 600px) {
+  .contact .form{width: 100%}
+  .contact .form label:first-of-type ,.contact .form label:nth-of-type(2){width:100%;}
+   .contact .form button{width: 100%}
+  .contact .form label:nth-of-type(2){margin-top:45px;position: absolute;}
+  .contact .form input:first-of-type ,.contact .form input:nth-of-type(2){width: 100%;height: 40px;margin-bottom: 5%;border: 1px solid #80808045;outline: none;}
+  .contact .form input:nth-of-type(2){top: 10px;position: relative;}
+}
+/*footer part*/
+.footer{position: relative;top: 900px;}
+.footer h3{font-size:18px;font-weight: bold;margin-bottom: 15px;}
+.footer .about p{color: gray;line-height: 1.7;}
+.footer .links ul li{list-style-type: none;color: gray;margin-bottom: 15px;transition: .5s;cursor: pointer;}
+.footer .links ul li:hover{color:#F16821}
+.footer .follow i{margin-right: 30px;color: gray;transition: .5s;cursor: pointer;}
+.footer .follow i:hover{color:#F16821}
+.footer .product2 img{max-width: 100%;}
+.footer .product2 p{margin-top: 20px;font-size: 22px;color: #717171;}
+.footer .product2 span{color: black;font-weight: bold;display: block;}
+.footer .product2 button{display: block;background:black;width:60%;height: 40px;color: white;border:none;
+margin-top:10px;font-weight:bold ;transition: 1s;}
+.footer .product2 button:hover{color: black;background: white;border: 1px solid black}
+@media only screen and (max-width: 600px) {
+  .footer .product2{margin-top: 15px}
+}
+/*copy part*/
+.copy{position: relative;top: 1000px;text-align: center;color: gray;padding: 20px;}
